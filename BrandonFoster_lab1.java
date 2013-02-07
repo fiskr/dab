@@ -1,4 +1,5 @@
 /*************************************************************************
+ *  Fishy cake
  *  Lab 1
  *  Name: Brandon Foster
  *  Compilation:  javac BrandonFoster_lab1.java
