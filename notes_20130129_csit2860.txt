@@ -1,0 +1,41 @@
+CSIT 2860P01: Computer Oraganization and Architecture
+Tuesday January 29, 2013
+Hex.    Bin.    Dec.
+1       0001    1
+2       0010    2
+3       0011    3
+...
+9       1001    9
+A       1010    10
+...
+F       1111    15
+
+Given the binary number:
+00101111101010111000
+we can convert to hexadecimal by breaking down into 4bits:
+0010 1111 1010 1011 1000
+Which is easy to convert to hex.:
+0X02FAB8
+
+This is great for representing colours:
+RGB, two hex digits per value
+
+
+1AF
+1 * 16^2 + 10 * 16^1 + 15 * 16^0
+256 + 160 + 15
+416 + 15
+431
+
+0X1AF = 431
+
+700
+7 * 8^2
+7 * 64
+
+0001000000
+0000000111
+0001000000
+0010000000
+0100000000
+0111000000

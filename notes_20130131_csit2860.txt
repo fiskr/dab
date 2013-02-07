@@ -1,0 +1,72 @@
+Signed magnitude
+        in an 8-bit word, the absolute value is stored in
+        the right 7 bits, and the first bit determines if
+        that value is positive or negative.
+        e.g.
+        6 = 00000110
+        -6 = 10000110
+        Notice 1 represents negative, 0 represents positive
+        the value 6 (0110) is stored in the seven bits
+        to the right of the sign value
+
+        this system of representing negative and positive
+        numbers is easy to understand, but requires more
+        complicated computer hardware- addition and
+        subtraction are separate modules
+        additionally, there are two values for zeros.
+
+Complement Systems:
+
+One's complement
+        to find a compliment, just switch the bits.
+        e.g.
+        00000110 = 6
+        11111001 = -6
+
+        if the first bit is 1, the value is a complement
+        representing the complement to a positive number
+
+        in addition, a final carry bit is "carried around"
+        and added to the sum.
+        e.g.
+        00110000 (48)
+        11101100 (-19)
+        --------
+        00011100 (28)
+              +1
+        --------
+        00011101 (29)
+
+        there is, unfortunately, still two zeros:
+        00000000
+        11111111
+
+Two's complement
+        To get a two's complement:
+        switch bits (to get one's complement)
+        and add one.
+        e.g.
+        00000110 (6)
+        11111001 (one's complement of 6)
+        11111010 (two's complement of 6)
+
+        no need to separate addition and subtraction
+        one value for zero
+
+        This solves the problem of two zeros.
+
+
+Addition rules:
+0 + 0 = 0
+1 + 0 = 1
+0 + 1 = 1
+1 + 1 = 10
+
+In addition of two's complements, if the carry in and carry
+out of the first bit differs, overflow has occurred.
+
+
+Unsigned numbers don't lose the furthest left number, that
+one bit representing a loss of half of the potential positive
+values of the word.
+Memory addresses are always unsigned.
