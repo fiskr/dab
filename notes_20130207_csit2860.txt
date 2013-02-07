@@ -1,0 +1,57 @@
+February 07, 2013
+CSIT 2260: Computer organization and architecture
+
+IEEE-754 floating point (single precision: 8-bit exponent)
+
+sign bit, exponent byte, 23 bit significand with implied 1
+
+implied 1
+        since normal form requires a 1 in the first bit of the
+        significand, there is no need to store it- it's
+        implied.
+        e.g.
+        0 10000000 00000000000000000000000 = 2^1 x 1.0
+
+Since the exponent is a byte, it has a bias of 127.
+
+28.5
+1       0
+2       0
+4       1
+8       1
+16      1
+32
+64
+128
+256
+
+28.5(base 10) = 11100.1(base 2) = 1.11001 x 2^4
+
+127(bias) + 4(exponent) = 131(stored exponent)
+0 10000011 11001000000000000000000 = + (2^)4 x (1).11001
+
+
+Special Values:
+maxed out exponents are reserved for values like zero,
+not a number, and infinity.
+
+Never == 0, there are two values for 0
+ (1 00000000 0000... and 0 00000000 0000...)
+
+Errors
+------
+Some numbers cannot be represented by floating point numbers.
+This means we can only get close to the actual value
+we are attempting to store.
+Because it is not exactly the number we are looking for,
+there is percentage of error, calculated by:
+number we're trying to store - number we have to store
+divided by the number we're trting to store
+or, if x = number we're trying to store and y = the number
+we are forced to store, and p = the percent error,
+p = (x - y) / x
+
+
+Range =
+Accuracy =
+Precision =
