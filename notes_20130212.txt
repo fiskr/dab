@@ -1,0 +1,51 @@
+George Boole (1815 - 1864)
+English mathematician, philosopher, and logician
+invented Boolean logic.
+
+Boolean algebra
+two values,
+"Boolean expressions" are operations on Boolean variables
+Main operations:
+----------------
+Conjunction (and)	 ^ 
+Disjunction (or)	 V
+Negation (not)		 ¬  
+
+Other Operations:
+-----------------
+Exclusive Disjunction (exclusive or)	J, XOR
+NAND (negation on a conjunction)	¬ (A ^ B)  
+NOR (negation on a disjunction)		¬ (A V B)
+
+Order of Operations: Disjunction 
+
+Truth table
+
+Conjunction
+A	B	A^B
+-	-	---
+0	0	0
+0	1	0
+1	0	0
+1	1	1
+
+Disjunction
+A	B	AVB
+-	-	---
+0	0	0
+0	1	1
+1	0	1
+1	1	1
+
+Exclusive Disjunction
+A	B	A XOR B
+-	-	-------
+0	0	0
+0	1	1
+1	0	1
+1	1	0
+
+
+
+Logical Gates
+gates are logical operations
